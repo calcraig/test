@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block jumbotrontitle %}
+<b>{{title}}</b>
+{% endblock %}
+
+{% block jumbotroncontent %}
+    <br>
+    Written by <b>{{author}}</b> and published in <b>{{published}}</b>.
+    <br><br>
+    <h2 style="font-family: Merriweather"><em>" {{first_sentence}} "</em></h2>
+    <br><br>
+        <form action="#" method="POST" class="display-7">
+            <p class="lead"><input type="submit" name="return" value="HOME" /></p>
+        </form>
+{% endblock %}
+
+{% block tester %}
+{% endblock %}

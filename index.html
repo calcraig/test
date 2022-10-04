@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+SCI FInder
+{% endblock %}
+
+{% block jumbotrontitle %}
+Welcome!
+{% endblock %}
+
+{% block jumbotroncontent %}
+    <br>SCI FInder is an interactive list of famous works of Science Fiction.<br>
+    Feel free to use the dropdown below to find a book!
+    <br><br>
+        <form action="#" method="POST" class="display-7">
+            <select name="book" id="id">
+                <option value="0">A Fire Upon the Deep</option>
+                <option value="1">The Ones Who Walk Away From Omelas</option>
+                <option value="2">Dhalgren</option>
+                <option value="3">Dune</option>
+                <option value="4">Neuromancer</option>
+                <option value="5">Roadside Picnic</option>
+                <option value="6">The City and the City</option>
+            </select><br><br>
+            <p class="lead"><input type="submit" name="select" value="select" /></p>
+            <p class="lead"><input type="submit" name="show_all" value="show all" /></p>
+        </form>
+{% endblock %}
+
+{% block tester %}
+{% endblock %}
